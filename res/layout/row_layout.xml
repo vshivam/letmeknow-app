@@ -1,31 +1,91 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    android:orientation="vertical" >    
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical" 
+    android:padding="5dip"
+    android:paddingBottom="8dip">    
     <TextView android:id="@+id/title"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="@+id/label"
-        android:textSize="20px"> </TextView>
+        style="@android:style/TextAppearance.Medium"
+		android:textColor="@color/magenta"> </TextView>
+        
+         <LinearLayout
+         android:id="@+id/ll_sDate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        
+         <TextView
+	        android:id="@+id/sDate_lbl"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:text="Start Date : " 
+	        android:textColor="@color/blue"
+	        style="@android:style/TextAppearance.Small"/>
     <TextView android:id="@+id/start_date"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="@+id/label"
-        android:textSize="20px"> </TextView>
-    <TextView android:id="@+id/end_date"
+        style="@android:style/TextAppearance.Small"> </TextView>
+        </LinearLayout>
+        
+        <LinearLayout
+         android:id="@+id/ll_eDate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        
+         <TextView
+	        android:id="@+id/sDate_lbl"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:text="End Date : " 
+	        android:textColor="@color/blue"
+	        style="@android:style/TextAppearance.Small"/>
+     <TextView android:id="@+id/end_date"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="@+id/label"
-        android:textSize="20px"> </TextView>
-    <TextView android:id="@+id/deadline"
+        style="@android:style/TextAppearance.Small"> </TextView>
+        </LinearLayout>
+        
+        <LinearLayout
+         android:id="@+id/ll_deadline"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        
+         <TextView
+	        android:id="@+id/sDate_lbl"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:text="Deadline : " 
+	        android:textColor="@color/blue"
+	        style="@android:style/TextAppearance.Small"/>
+<TextView android:id="@+id/deadline"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        style="@android:style/TextAppearance.Small"> </TextView>
+        </LinearLayout>
+        
+        <LinearLayout
+         android:id="@+id/ll_sDate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        style="@android:style/TextAppearance.Small">
+        
+		<TextView android:id="@+id/description"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="@+id/label"
-        android:textSize="20px"> </TextView>
-    <TextView android:id="@+id/description"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="@+id/label"
-        android:textSize="20px"> </TextView>
+        style="@android:style/TextAppearance.Small"> </TextView>
+        </LinearLayout>
+    
+   
+    
+    
 </LinearLayout>

@@ -1,0 +1,270 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout 
+xmlns:android="http://schemas.android.com/apk/res/android"
+	android:id="@+id/main"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical">
+<ScrollView 
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_margin="5dip">
+	
+	<LinearLayout
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="" 
+		android:textColor="@color/magenta"
+		style="@android:style/TextAppearance.Medium"/>
+        
+        <LinearLayout
+        android:id="@+id/ll_loc"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        
+        <TextView
+	        android:layout_marginTop="10dip"
+	        android:id="@+id/location_lbl"
+	        android:layout_weight="2"
+        	android:layout_width="0px"
+	        android:layout_height="wrap_content"
+	        android:text="Location : " 
+	        android:textColor="@color/blue"
+	        style="@android:style/TextAppearance.Small"/>
+        
+	    	<TextView
+	        android:layout_marginTop="10dip"
+	        android:id="@+id/location"
+	        android:layout_weight="5"
+        android:layout_width="0px"
+	        android:layout_height="wrap_content"
+	        android:text="" 
+	        style="@android:style/TextAppearance.Small"/>
+        </LinearLayout>
+        
+     
+     <LinearLayout
+     android:id="@+id/ll_org"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        
+         <TextView
+	        android:id="@+id/org_lbl"
+	        android:layout_weight="2"
+        	android:layout_width="0px"
+	        android:layout_height="wrap_content"
+	        android:text="Organizer : " 
+	        android:textColor="@color/blue"
+	        style="@android:style/TextAppearance.Small"/>
+    <TextView
+        android:id="@+id/org"
+        android:layout_weight="5"
+        android:layout_width="0px"
+        android:layout_height="wrap_content"
+        android:text="" 
+        style="@android:style/TextAppearance.Small"/>
+        
+        </LinearLayout>
+        
+         <LinearLayout
+         android:id="@+id/ll_sDate"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        
+         <TextView
+	        android:layout_marginTop="10dip"
+	        android:id="@+id/sDate_lbl"
+	        android:layout_weight="2"
+        	android:layout_width="0px"
+	        android:layout_height="wrap_content"
+	        android:text="Start Date : " 
+	        android:textColor="@color/blue"
+	        style="@android:style/TextAppearance.Small"/>
+    <TextView
+        android:layout_marginTop="10dip"
+        android:id="@+id/start_date"
+        android:layout_weight="5"
+        android:layout_width="0px"
+        android:layout_height="wrap_content"
+        android:text="" 
+        style="@android:style/TextAppearance.Small"/>
+        </LinearLayout>
+        
+         <LinearLayout
+         android:id="@+id/ll_eDate"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        
+         <TextView
+	        android:id="@+id/eDate_lbl"
+	        android:layout_weight="2"
+        android:layout_width="0px"
+	        android:layout_height="wrap_content"
+	        android:text="End Date : " 
+	        android:textColor="@color/blue"
+	        style="@android:style/TextAppearance.Small"/>
+	        
+    <TextView
+        android:id="@+id/end_date"
+        android:layout_weight="5"
+        android:layout_width="0px"
+        android:layout_height="wrap_content"
+        android:text="" 
+        style="@android:style/TextAppearance.Small"/>
+        
+        </LinearLayout>
+        
+         <LinearLayout
+         android:id="@+id/ll_deadline"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        
+         <TextView
+	        android:id="@+id/deadline_lbl"
+	        android:layout_weight="2"
+        	android:layout_width="0px"
+	        android:layout_height="wrap_content"
+	        android:text="Deadline : " 
+	        android:textColor="@color/blue"
+	        style="@android:style/TextAppearance.Small"/>
+    <TextView
+        android:id="@+id/deadline"
+        android:layout_weight="5"
+        android:layout_width="0px"
+        android:layout_height="wrap_content"
+        android:text="" 
+        style="@android:style/TextAppearance.Small"/>
+        </LinearLayout>
+        
+         <LinearLayout
+         android:id="@+id/ll_elig"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        
+         <TextView
+	        android:layout_marginTop="10dip"
+	        android:id="@+id/eligibility_lbl"
+	         android:layout_weight="2"
+        	android:layout_width="0px"
+	        android:layout_height="wrap_content"
+	        android:text="Eligibility : " 
+	        android:textColor="@color/blue"
+	        style="@android:style/TextAppearance.Small"/>
+    <TextView
+        android:layout_marginTop="10dip"
+        android:id="@+id/eligibility"
+         android:layout_weight="5"
+        	android:layout_width="0px"
+        android:layout_height="wrap_content"
+        android:text="" 
+        style="@android:style/TextAppearance.Small"/>
+        </LinearLayout>
+        
+        <LinearLayout
+        android:id="@+id/ll_type"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        
+        <TextView
+	        android:layout_marginTop="10dip"
+	        android:id="@+id/type_lbl"
+	         android:layout_weight="2"
+        	android:layout_width="0px"
+	        android:layout_height="wrap_content"
+	        android:text="Type : " 
+	        android:textColor="@color/blue"
+	        style="@android:style/TextAppearance.Small"/>
+    <TextView
+        android:layout_marginTop="10dip"
+        android:id="@+id/type"
+        android:layout_weight="5"
+        android:layout_width="0px"
+        android:layout_height="wrap_content"
+        android:text="" 
+        style="@android:style/TextAppearance.Small"/>
+</LinearLayout>
+	        
+	        <LinearLayout
+	        android:id="@+id/ll_pub"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+    <TextView
+        android:layout_marginTop="10dip"
+        android:id="@+id/pub_lbl"
+	    android:layout_weight="2"
+       	android:layout_width="0px"
+        android:layout_height="wrap_content"
+        android:text="Published : " 
+        android:textColor="@color/blue"
+        style="@android:style/TextAppearance.Small"/>
+    <TextView
+        android:layout_marginTop="10dip"
+        android:id="@+id/pub_date"
+        android:layout_weight="5"
+        android:layout_width="0px"
+        android:layout_height="wrap_content"
+        android:text="" 
+        style="@android:style/TextAppearance.Small"/>
+        </LinearLayout>
+        
+    <WebView
+        android:paddingTop="5dp"
+        android:layout_marginTop="10dp"
+        android:id="@+id/details"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" 
+        android:text=""
+        android:layout_marginBottom="10dp"/>
+    <!--  
+    <TextView
+        android:layout_marginTop="10dip"
+        android:id="@+id/website"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text=""
+        android:onClick="openWebsite"                
+       	android:clickable="true"
+       	android:textColor="@color/blue"/>
+    <TextView
+        android:layout_marginTop="10dip"
+        android:id="@+id/email"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="" 
+        android:onClick="sendEmail"                
+       	android:clickable="true"
+       	android:textColor="@color/blue"/>
+       	-->
+       	<LinearLayout 
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_gravity="center_horizontal">
+<ImageButton
+	android:layout_marginBottom="10dip"
+    android:id="@+id/apply_now"
+    android:background="@color/white"
+	android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:src="@drawable/app">
+</ImageButton>    
+</LinearLayout>
+    
+
+</LinearLayout>
+</ScrollView>
+
+</LinearLayout>

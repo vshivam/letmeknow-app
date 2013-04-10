@@ -8,5 +8,6 @@
     <color name="yellow">#f3e11e</color>
     <color name="white">#ffffff</color>
         <color name="black">#000000</color>
+        <color name= "magenta"> #e01b6a</color>
     
 </resources>
